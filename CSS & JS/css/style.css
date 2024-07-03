@@ -1,0 +1,241 @@
+@font-face {
+    font-family: "Rowdies";
+    src: url(./Fonts/Rowdies-Regular.ttf);
+}
+@font-face {
+    font-family: "Pacifico";
+    src: url(./Fonts/Pacifico-Regular.ttf);
+}
+
+*{
+    font-family: "Rowdies";
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 1rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    color: #ffe57f;
+    background-color: #663700;
+}
+
+.navbar-brand{
+    padding-left: 5px;
+    color: #ffe57f;
+    font-size: 22px;
+}
+
+#navbarSupportedContent a{
+    color: #ffe57f;
+    border-bottom: 2px solid transparent;
+    margin-right: 20px;
+}
+
+#navbarSupportedContent a:hover{
+    color:antiquewhite;
+    border-bottom: 2px solid antiquewhite;
+}
+
+#navbarSupportedContent button{
+     border-radius: 13px;
+     background-color: #ffe57f;
+     color: #663700;
+     border: 2px transparent;
+}
+
+#navbarSupportedContent button:hover{
+    color:  #ffe57f;
+    background-color: #663700;
+    border: 2px #ffe57f;
+}
+
+.navbar-nav{
+    text-align: right;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/***HOME***/
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url('./Assets/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+#home h1{
+    font-size: 75px;
+    font-weight: 90;
+    color: #ffe57f;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 3px black;
+}
+
+#home p{
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: .5px rgb(205, 28, 222);
+}
+
+#home button{
+    background-color: black;
+    font-size: 30px;
+    margin-top: 30px;
+    color: #ffbd03;
+    border-color: #ffbd03;
+    border-width: 3px;
+    border-radius: 20px;
+}
+#home button:hover{
+    color: rgb(205, 28, 222);
+    border-color: rgb(205, 28, 222);
+}
+
+/****SWEETS****/
+#sweets{
+    background-color: #e5e5e5;
+}
+
+#sweets h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Pacifico";
+    color: #ffbd03;
+    -webkit-text-stroke: .5px #663700;
+}
+
+#sweets img{
+    width: 210px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.card{
+    width: 250px;
+    height: 320px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: .2s;
+}
+
+/****SAVOURIES****/
+#savouries{
+    background-color: #e5e5e5;
+}
+
+#savouries h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Pacifico";
+    color: #ffbd03;
+    -webkit-text-stroke: .5px #663700;
+}
+
+#savouries img{
+    width: 210px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/****BAKED****/
+#baked{
+    background-color: #e5e5e5;
+}
+
+#baked h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Pacifico";
+    color: #ffbd03;
+    -webkit-text-stroke: .5px #663700;
+}
+
+#baked img{
+    width: 210px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/****BULKORDER****/
+#bulkorder h1{
+    color: #ffbd03;
+    -webkit-text-stroke: 2px #663700;
+    letter-spacing: 2px;
+}
+#bulkorder img{
+height: 100%;
+}
+
+.box{
+    width: 80% !important;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#bulkorder input{
+    margin: 10px 0px;
+}
+
+#bulkorder textarea{
+    margin: 10px 0px;
+}
+
+#bulkorder button{
+    background-color: #ffe57f;
+    color: #663700;
+    font-size: 20px;
+    padding: 0%;
+    font-size: 25px;
+}
+
+#bulkorder button:hover{
+    background-color: #663700;
+    color: #ffe57f;
+    font-size: 20px;
+    padding: 0%;
+    font-size: 25px;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0,0,0,.8);
+    margin-top: -30px;
+    padding: 0px 0px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
